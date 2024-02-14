@@ -24,6 +24,9 @@ const Hero = () => {
 
           </span>
           </h1>
+          <p className={`${styles.heroSubText} mt-2 ml-6 text-white-100`}>
+          A full-stack developer, I develop  <br className='sm:block hidden'/> seamless web applications 
+          </p>
         </div>
       </div>
 
