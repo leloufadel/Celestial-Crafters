@@ -54,8 +54,13 @@ className={`${active === link.title ? "text-white"
 cursor-pointer text-[16px]`
 
 }
-onClick={() => setActive(link.title)}
+
+onClick={() => {
+setToggle(!toggle);
+
+setActive(link.title)}}
 >
+
   <a href={`#${link.id}`}>{link.title}</a>
   </li>
 ))}
