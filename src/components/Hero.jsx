@@ -1,7 +1,7 @@
 import React from 'react'
 // import { motion } from 'framer-motion';
 import { styles } from '../styles';
-// import { ComponentCanvas } from './canvas';
+import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
   return (
@@ -29,9 +29,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
+      <ComputersCanvas />
     </div>
-    
+ 
     </section>
   )
 }
