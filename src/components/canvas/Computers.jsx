@@ -8,16 +8,21 @@ const Computers = () => {
   const computer = useGLTF('/desktop_pc/scene.gltf');
   return (
     <mesh>
-      < hemisphereLight intensity={0.15} 
-      groundcolor = "black"/>
+      < hemisphereLight intensity={0.75} 
+      groundcolor = "white" />
       <pointLight intensity={1} />
-      {/* <spotLight position={[-20, 50, 10]}
+      <spotLight position={[-20, 50, 10]}
       angle={0.14}
-      /> */}
+      penumbra={1}
+      intensity={1}
+      />
       <primitive object={computer.scene} 
       scale ={0.75}
       position = {[0, -3.25, -1.5]}
       rotation = {[-0.01, -0.2, -0.1]}
+      castShadow
+      // shadow-mapSize-width={1024}
+      // shadow-mapSize={1024}
       />
     </mesh>
   )
