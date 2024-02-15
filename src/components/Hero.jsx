@@ -29,9 +29,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
     </div>
- 
+    <ComputersCanvas />
+
     </section>
   )
 }
