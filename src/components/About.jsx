@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
+import Tilt from "react-tilt";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <motion.div variants={textVariant()}>
+      <p className={styles.sectionSubText}>Introduction</p>
+      <h2 className={styles.sectionHeadText}>Overview.</h2>
+    </motion.div>
+</>
   )
 }
 
