@@ -8,8 +8,8 @@ const Computers = () => {
   const computer = useGLTF('/desktop_pc/scene.gltf');
   return (
     <mesh>
-      < hemisphereLight intensity={0.15} 
-      groundcolor = "black" />
+      < hemisphereLight intensity={0.85} 
+      groundcolor = "white" />
       <pointLight intensity={1} />
       <spotLight position={[-20, 50, 10]}
       angle={0.14}
