@@ -12,8 +12,12 @@ const Hero = () => {
       <div className="flex flex-col justify-center
       items-centre mt-5 ">
         <div className='w-5 h-5 rounded-full bg-[#915eff]'></div>
-        <div className='w-1 sm:h-80 h-40 violet-gradient ml-2 '></div>
+      
+        
+        <div className='w-1 sm:h-80 h-40 violet-gradient ml-2 '> </div>
+
         </div>
+      
         <div>
           <h1 className={`${styles.heroHeadText} 
           text-white`}>  &nbsp; Hi, I'm <span className='text-[#915eff]'>
@@ -31,7 +35,6 @@ const Hero = () => {
 
     
     <ComputersCanvas />
-
     </section>
     
   )
