@@ -1,5 +1,5 @@
 import {
-    mobile,
+    // mobile,
     backend,
     creator,
     web,
@@ -7,6 +7,7 @@ import {
     typescript,
     html,
     css,
+    reactech,
     reactjs,
     redux,
     tailwind,
@@ -46,15 +47,15 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "React JS Developer",
+      icon: reactech,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "JavaScript",
       icon: creator,
     },
   ];
