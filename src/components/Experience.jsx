@@ -10,7 +10,15 @@ import { textVariant} from '../utils/motion';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 
 const ExperienceCard = ({ experience }) => {
+ <VerticalTimelineElement 
+ contentStyle={{ background: '#1d1836', color: 
+ '#fff' }}
+ contentArrowStyle ={{ borderRight: '7px solid #2326131'}}
+ date={experience.date}
+ iconStyle={{ background: experience.iconBg}}
+ >
 
+ </VerticalTimelineElement>
 }
 
 const Experience = () => {
