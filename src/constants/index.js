@@ -17,8 +17,8 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
-    tesla,
+    ibtikar,
+    ApexGames,
     shopify,
     carrent,
     jobit,
@@ -119,7 +119,7 @@ import {
     {
       title: "Full Stuck Developer",
       company_name: "Ibtikar Technologies",
-      icon: starbucks,
+      icon: ibtikar,
       iconBg: "#383E56",
       date: "feb 2024 - Present",
       points: [
