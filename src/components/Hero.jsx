@@ -17,19 +17,15 @@ const Hero = () => {
         <div className='w-1 sm:h-80 h-40 violet-gradient ml-2' /> 
 
         </div>
-      
         <div>
-          <h1 className={`${styles.heroHeadText} 
-          text-white`}>  &nbsp; Hi, I'm <span className='text-[#915eff]'>
-            Lalla
+  <h1 className={`${styles.heroHeadText} text-white`}>
+    &nbsp; Hi, I'm <span className='text-[#915eff] animate-typing'>Lalla</span>
+  </h1>
+  <p className={`${styles.heroSubText} mt-2 ml-6 text-white-100 animate-typing`}>
+    A full-stack developer, I develop <br className='sm:block hidden'/> seamless web applications
+  </p>
+</div>
 
-          </span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 ml-6 text-white-100`}>
-          A full-stack developer, I develop  <br className='sm:block hidden'/> seamless web applications 
-          </p>
-
-      </div>
  
     </div>
   <ComputersCanvas  />
