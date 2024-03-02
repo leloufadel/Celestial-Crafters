@@ -17,7 +17,7 @@ onClick={() => { setActive("");
 window.scrollTo(0, 0);
 }}
 >
-<img src={logo} alt="logo" className="w-9 h- 9 object-contain hover:animate-spin " />
+<img src={logo} alt="logo" className="w-9 h- 9 object-contain animate-spin duration-100" />
 <p className="text-white text-[18px] 
 font-bold cursor-pointer flex">Lalla &nbsp;
 <span className='sm:block hidden'> | Portfolio</span>
@@ -40,7 +40,7 @@ onClick={() => setActive(link.title)}
  items-center">
    <img src={toggle ? close : menu} alt='menu' 
    className ="w-[28px] h-[28px]
-   object-contain cursor-pointer" 
+   object-contain cursor-pointer hover:animate-spin duration-500" 
    onClick={() => setToggle(!toggle)}
    />    
 <div className={`${!toggle ? 'hidden' :'flex'}
