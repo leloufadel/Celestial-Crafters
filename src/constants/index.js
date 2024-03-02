@@ -132,7 +132,7 @@ import {
     {
       title: "React.js Developer",
       company_name: "Apex Games",
-      icon: tesla,
+      icon: ApexGames,
       iconBg: "#E6DEDD",
       date: "feb 2024 - May 2024",
       points: [
