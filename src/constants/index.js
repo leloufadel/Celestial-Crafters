@@ -19,7 +19,7 @@ import {
     meta,
     ibtikar,
     ApexGames,
-    shopify,
+    TechA,
     carrent,
     jobit,
     tripguide,
@@ -144,7 +144,7 @@ import {
     {
       title: "Web Developer and Designer",
       company_name: "Tech-A-Intern",
-      icon: shopify,
+      icon: TechA,
       iconBg: "#383E56",
       date: "dec 2022 - Jan 2023",
       points: [
