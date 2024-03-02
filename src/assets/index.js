@@ -22,8 +22,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
+import microverse from "./company/microverse.png";
+import TechA from "./company/TechA.png";
 import ibtikar from "./company/ibtikar.png";
 import ApexGames from "./company/ApexGames.png";
 
@@ -54,8 +54,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
+  microverse,
+  TechA,
   ibtikar,
   ApexGames,
   carrent,
