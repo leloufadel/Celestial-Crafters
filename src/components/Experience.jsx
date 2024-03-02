@@ -38,7 +38,9 @@ const ExperienceCard = ({ experience }) => {
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {experience.company_name} &nbsp;
+          {experience.location}
+
         </p>
       </div>
 

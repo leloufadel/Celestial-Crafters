@@ -16,7 +16,7 @@ import {
     git,
     figma,
     docker,
-    meta,
+    microverse,
     ibtikar,
     ApexGames,
     TechA,
@@ -120,6 +120,8 @@ import {
       title: "Full Stuck Developer",
       company_name: "Ibtikar Technologies",
       icon: ibtikar,
+      location:"Mauritanie, on-site",
+
       iconBg: "#383E56",
       date: "feb 2024 - Present",
       points: [
@@ -133,6 +135,7 @@ import {
       title: "React.js Developer",
       company_name: "Apex Games",
       icon: ApexGames,
+      location:"United States, Remote",
       iconBg: "#E6DEDD",
       date: "feb 2024 - May 2024",
       points: [
@@ -144,6 +147,7 @@ import {
     {
       title: "Web Developer and Designer",
       company_name: "Tech-A-Intern",
+      location:"India, Remote",
       icon: TechA,
       iconBg: "#383E56",
       date: "dec 2022 - Jan 2023",
@@ -155,7 +159,8 @@ import {
     {
       title: "Full stack Developer",
       company_name: "Microverse",
-      icon: meta,
+      icon: microverse,
+      location:"United States, Remote",
       iconBg: "#E6DEDD",
       date: "April 2023 - March 2024",
       points: [
