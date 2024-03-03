@@ -11,11 +11,11 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
+    rails,
     mongodb,
     git,
     figma,
-    docker,
+    ruby,
     microverse,
     ibtikar,
     ApexGames,
@@ -90,8 +90,8 @@ import {
       icon: tailwind,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "Ruby on Rails",
+      icon: rails,
     },
     {
       name: "MongoDB",
@@ -110,8 +110,8 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "ruby",
+      icon: ruby,
     },
   ];
   
