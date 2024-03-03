@@ -13,17 +13,19 @@ const styles = {
     sectionSubText:
       "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
       '@keyframes typing': {
-    from: {
-      width: 0
-    },
-    to: {
-      width: 'auto'
-    }
-  },
-
-  // Apply the typing animation
-  animation: 'typing 1s steps(30, end) forwards'
-};
+        from: {
+          width: 0
+        },
+        to: {
+          width: 'auto'
+        }
+      },
+    
+      // Apply the typing animation
+      animateTyping: {
+        animation: 'typing 1s steps(30, end) forwards'
+      }
+    };
 
   
   export  { styles };
