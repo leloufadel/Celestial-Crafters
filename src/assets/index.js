@@ -13,7 +13,7 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
+import postsql from "./tech/postsql.png";
 import rails from "./tech/rails.png";
 import reactjs from "./tech/reactjs.png";
 import reactech from "./tech/reactech.png";
@@ -46,7 +46,7 @@ export {
   git,
   html,
   javascript,
-  mongodb,
+  postsql,
   rails,
   reactjs,
   reactech,

@@ -12,7 +12,7 @@ import {
     redux,
     tailwind,
     rails,
-    mongodb,
+    postsql,
     git,
     figma,
     ruby,
@@ -94,8 +94,8 @@ import {
       icon: rails,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "postsql",
+      icon: postsql,
     },
     {
       name: "Three JS",
