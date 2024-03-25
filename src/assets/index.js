@@ -29,6 +29,7 @@ import ApexGames from "./company/ApexGames.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import live from "./live.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -61,4 +62,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  live,
 };
