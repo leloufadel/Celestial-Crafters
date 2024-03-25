@@ -8,13 +8,13 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
+import ruby from "./tech/ruby.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import postsql from "./tech/postsql.png";
+import rails from "./tech/rails.png";
 import reactjs from "./tech/reactjs.png";
 import reactech from "./tech/reactech.png";
 import redux from "./tech/redux.png";
@@ -41,13 +41,13 @@ export {
   menu,
   close,
   css,
-  docker,
+  ruby,
   figma,
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
+  postsql,
+  rails,
   reactjs,
   reactech,
   redux,

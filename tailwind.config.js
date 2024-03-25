@@ -23,5 +23,17 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '@keyframes slide': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        '.slider': {
+          animation: 'slide 20s linear infinite',
+        },
+      });
+    },
+  ],
 };
