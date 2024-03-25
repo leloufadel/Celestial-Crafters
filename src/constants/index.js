@@ -24,6 +24,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    live,
   } from "../assets";
   
   export const navLinks = [
@@ -201,46 +202,49 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Page To Page Library",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Page to Page Library is a Full Stuck web app that allows users to view and reserve books. Only admins can add and delete books and also give admin permissions to regular users.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Postgresql",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "ruby on rails",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/leloufadel/Page-To-page-Library-Backend",
+      live_code_link: "https://page-to-page.onrender.com/",
+
     },
     {
-      name: "Job IT",
+      name: "Space Travelers' Hub",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Space Travelers' Hub is a web application for a company that provides commercial and scientific space travel services. It allows users to book rockets and join selected space missions.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "redux",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/sam2if/Space_Travelers",
+      live_code_link: "https://space-travelers-p674.onrender.com/",
     },
     {
       name: "Trip Guide",
