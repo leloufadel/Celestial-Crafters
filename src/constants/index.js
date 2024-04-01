@@ -23,6 +23,7 @@ import {
     carrent,
     jobit,
     tripguide,
+    bankist,
     threejs,
     live,
   } from "../assets";
@@ -247,16 +248,38 @@ import {
       live_code_link: "https://space-travelers-p674.onrender.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Bankist Project",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        " A Virtual banking experience. Bankist is a fictional online bank. It is a project introduced by Jonas Schmedtmann in order to practice DOM manipulation and user interaction. Bankist has the option to log in to the account and use different functionalities, almost like in an actual bank.",
       tags: [
         {
-          name: "nextjs",
+          name: "JavaScript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Html",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: bankist,
+      source_code_link: "https://github.com/leloufadel/Bankist-Project",
+      live_code_link: "https://github.com/leloufadel/Bankist-Project",
+    },
+    {
+      name: "Recipe Guide",
+      description:
+        "Recipe Search App is a web application that allows users to search for their favorite recipes and displays a list of recipes based on the search query. It integrates with the Edamam API to fetch recipe data and provides a user-friendly interface for finding and exploring various recipes.",
+      tags: [
+        {
+          name: "javaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "API",
           color: "green-text-gradient",
         },
         {

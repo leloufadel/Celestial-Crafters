@@ -31,7 +31,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import live from "./live.png";
 import tripguide from "./tripguide.png";
-
+import bankist from "./bankist.png"
 export {
   logo,
   backend,
@@ -63,4 +63,5 @@ export {
   jobit,
   tripguide,
   live,
+  bankist,
 };

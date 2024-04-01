@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
@@ -10,7 +10,9 @@ import { live } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+// import { Slider } from "./Slider";
 // import { LineCurve } from "three";
+
 
 const ProjectCard = ({
   index,
@@ -83,6 +85,29 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [githubGraphImage, setGithubGraphImage] = useState('');
+
+  useEffect(() => {
+    const fetchGithubContributionGraph = async () => {
+      try {
+        const username = 'leloufadel'; 
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // Using a proxy to bypass CORS
+        const targetUrl = `https://ghchart.rshah.org/${username}`;
+        const response = await axios.get(proxyUrl + targetUrl);
+        const githubGraphImage = response.request.responseURL;
+
+        setGithubGraphImage(githubGraphImage);
+      } catch (error) {
+        console.error('Error fetching GitHub contribution graph:', error);
+      }
+    };
+
+    fetchGithubContributionGraph();
+  }, []);
+
+
+
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -108,14 +133,15 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+     
       <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
-        My Github Contributions
-        </motion.p>
+        <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+          My Github Contributions
+          <img src={githubGraphImage} alt='GitHub Contributions' />
+        </p>
       </div>
+  
+    
     </>
   );
 };
