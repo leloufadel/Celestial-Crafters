@@ -3,6 +3,9 @@ import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -85,28 +88,13 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const [githubGraphImage, setGithubGraphImage] = useState('');
-
-  useEffect(() => {
-    const fetchGithubContributionGraph = async () => {
-      try {
-        const username = 'leloufadel'; 
-        const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // Using a proxy to bypass CORS
-        const targetUrl = `https://ghchart.rshah.org/${username}`;
-        const response = await axios.get(proxyUrl + targetUrl);
-        const githubGraphImage = response.request.responseURL;
-
-        setGithubGraphImage(githubGraphImage);
-      } catch (error) {
-        console.error('Error fetching GitHub contribution graph:', error);
-      }
-    };
-
-    fetchGithubContributionGraph();
-  }, []);
-
-
-
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
 
   return (
     <>
@@ -128,20 +116,15 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+      <div className='mt-20'>
+        <Slider {...settings}>
+          {projects.map((project, index) => (
+            <div key={`project-${index}`}>
+              <ProjectCard index={index} {...project} />
+            </div>
+          ))}
+        </Slider>
       </div>
-     
-      <div className='w-full flex'>
-        <p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          My Github Contributions
-          <img src={githubGraphImage} alt='GitHub Contributions' />
-        </p>
-      </div>
-  
-    
     </>
   );
 };

@@ -26,6 +26,7 @@ import {
     bankist,
     threejs,
     live,
+    financial,
   } from "../assets";
   
   export const navLinks = [
@@ -246,6 +247,29 @@ import {
       image: jobit,
       source_code_link: "https://github.com/sam2if/Space_Travelers",
       live_code_link: "https://space-travelers-p674.onrender.com/",
+    },
+    ,
+    {
+      name: "Financial Metrics App",
+      description:
+        " An application that showcases the financial statements of selected companies in the US. The data is in real time, audited, standardized and up to date from the US stock market.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: financial,
+      source_code_link: "https://github.com/leloufadel/Financial-Metrics-App",
+      live_code_link: "https://financial-metrics-app.onrender.com/",
     },
     {
       name: "Bankist Project",
