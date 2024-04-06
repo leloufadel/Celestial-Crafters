@@ -29,8 +29,10 @@ import ApexGames from "./company/ApexGames.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import live from "./live.png";
 import tripguide from "./tripguide.png";
-
+import bankist from "./bankist.png"
+import financial from "./financial.png"
 export {
   logo,
   backend,
@@ -61,4 +63,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  live,
+  bankist,
+  financial,
 };
