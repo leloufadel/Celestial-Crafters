@@ -180,7 +180,7 @@ import {
       testimonial:
         "Lala is a great and kind worker. Always making sure to provide help and look out for others. Patient, well spoken, and great at communication. She was also great at helping solving problems and was incredibly creative at finding solutions!.",
       name: "Santiago Ruido",
-      designation: "Woked together at",
+      designation: "Lala and Santiago worked together at",
       company: "Microverse",
       image: "https://media.licdn.com/dms/image/D4E35AQHy_2Ykxqi7cQ/profile-framedphoto-shrink_800_800/0/1694763598907?e=1713646800&v=beta&t=wM5FLqBN-04pUY-GTCs_NnxiCIV6DS6W5CWzkkmNLtk",
     },
@@ -188,7 +188,7 @@ import {
       testimonial:
         "Lala Aicha is a brave and intelligent lady. She is willing to challenge herself to study new things to achieve her goals. She would be a reliable and valuable member of any team or company having her.",
       name: "Khanh DOM",
-      designation: "Worked together at",
+      designation: "lala worked with Khanh on the same team at",
       company: "Microverse",
       image: "https://avatars.githubusercontent.com/u/68627859?v=4",
     },
