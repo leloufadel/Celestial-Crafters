@@ -178,27 +178,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Lala is a great and kind worker. Always making sure to provide help and look out for others. Patient, well spoken, and great at communication. She was also great at helping solving problems and was incredibly creative at finding solutions!.",
+      name: "Santiago Ruido",
+      designation: "Woked together at",
+      company: "Microverse",
+      image: "https://media.licdn.com/dms/image/D4E35AQHy_2Ykxqi7cQ/profile-framedphoto-shrink_800_800/0/1694763598907?e=1713646800&v=beta&t=wM5FLqBN-04pUY-GTCs_NnxiCIV6DS6W5CWzkkmNLtk",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Lala Aicha is a brave and intelligent lady. She is willing to challenge herself to study new things to achieve her goals. She would be a reliable and valuable member of any team or company having her.",
+      name: "Khanh DOM",
+      designation: "Worked together at",
+      company: "Microverse",
+      image: "https://avatars.githubusercontent.com/u/68627859?v=4",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Lala Aicha is an exceptional software engineer who I've had the pleasure of collaborating with. Her passion for pair-programming, love for JavaScript, and proficiency in React make her a standout talent in the field. I highly recommend her as a skilled and motivated software engineer.",
+      name: "Omar Faruk",
+      designation: "Full-Stack Engineer at",
+      company: "StreetFoodFinder",
+      image: "https://media.licdn.com/dms/image/D5603AQFFNYdrnfgn4A/profile-displayphoto-shrink_200_200/0/1693855844663?e=1718236800&v=beta&t=VRKkwx79j-wgQHaTMyfvEf5aciodD2bg0_W609jqiqY",
     },
   ];
   
