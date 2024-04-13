@@ -103,34 +103,24 @@ const isLargeScreen = useMediaQuery({ query: '(min-width: 992px)' });
   };
 
   // Function to determine the number of slides to show based on screen width
-  function getSlidesToShow() {
-    if (isExtraSmallScreen && isSmallScreen) {
-      return 1;
-    } else if (isMediumScreen) {
-      return 2;
-    } else if (isLargeScreen) {
-      return 3;
+    function getSlidesToShow() {
+      if (isExtraSmallScreen || isSmallScreen) {
+        return 1;
+      } else {
+        return 3;
+      }
     }
     
-    // Default fallback value (in case no condition matches)
-    return 3; // Adjust this default value based on your design needs
-  }
+  
   
 
 
 // Update slidesToShow dynamically based on screen width
 settings.slidesToShow = getSlidesToShow();
 
-// Event listener to update settings when the window size changes
-// window.addEventListener("resize", () => {
-//   settings.slidesToShow = getSlidesToShow();
-//   // Re-initialize your slider here with updated settings if needed
-//   // For example: slickSlider.slick('unslick').slick(settings);
-// });
-
-
   return (
     <>
+
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -150,8 +140,7 @@ settings.slidesToShow = getSlidesToShow();
       </div>
 
       <div className='mt-20'>
-        <Slider {...settings} >
-          {projects.map((project, index) => (
+      <Slider {...settings} className="my-slider slider-dots slider-dots-active">          {projects.map((project, index) => (
             <div key={`project-${index}`}>
               <ProjectCard index={index} {...project} />
             </div>
