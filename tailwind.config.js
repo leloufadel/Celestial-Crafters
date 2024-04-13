@@ -31,7 +31,7 @@ module.exports = {
           '100%': { transform: 'translateX(100%)' },
         },
         '.slider': {
-          animation: 'slide 20s linear infinite',
+          // animation: 'slide 20s linear infinite',
         },
       });
     },

@@ -6,6 +6,7 @@ import axios from 'axios';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { useMediaQuery } from 'react-responsive';
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -13,8 +14,6 @@ import { live } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-// import { Slider } from "./Slider";
-// import { LineCurve } from "three";
 
 
 const ProjectCard = ({
@@ -88,13 +87,47 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+
+const isExtraSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
+const isSmallScreen = useMediaQuery({ query: '(min-width: 600px) and (max-width: 768px)' });
+const isMediumScreen = useMediaQuery({ query: '(min-width: 768px) and (max-width: 992px)' });
+const isLargeScreen = useMediaQuery({ query: '(min-width: 992px)' }); 
+
   const settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    // slidesToShow: 3,
+    slidesToShow: getSlidesToShow,
+    slidesToScroll: 1,
   };
+
+  // Function to determine the number of slides to show based on screen width
+  function getSlidesToShow() {
+    if (isExtraSmallScreen && isSmallScreen) {
+      return 1;
+    } else if (isMediumScreen) {
+      return 2;
+    } else if (isLargeScreen) {
+      return 3;
+    }
+    
+    // Default fallback value (in case no condition matches)
+    return 3; // Adjust this default value based on your design needs
+  }
+  
+
+
+// Update slidesToShow dynamically based on screen width
+settings.slidesToShow = getSlidesToShow();
+
+// Event listener to update settings when the window size changes
+// window.addEventListener("resize", () => {
+//   settings.slidesToShow = getSlidesToShow();
+//   // Re-initialize your slider here with updated settings if needed
+//   // For example: slickSlider.slick('unslick').slick(settings);
+// });
+
 
   return (
     <>
@@ -117,7 +150,7 @@ const Works = () => {
       </div>
 
       <div className='mt-20'>
-        <Slider {...settings}>
+        <Slider {...settings} >
           {projects.map((project, index) => (
             <div key={`project-${index}`}>
               <ProjectCard index={index} {...project} />
