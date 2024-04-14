@@ -32,7 +32,8 @@ import jobit from "./jobit.png";
 import live from "./live.png";
 import tripguide from "./tripguide.png";
 import bankist from "./bankist.png"
-import financial from "./financial.png"
+import financial from "./financial.png";
+ import bachelor from "./bachelor.png";
 export {
   logo,
   backend,
@@ -64,6 +65,7 @@ export {
   jobit,
   tripguide,
   live,
+  bachelor,
   bankist,
   financial,
 };
