@@ -12,7 +12,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { live } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { education } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 
@@ -112,8 +112,6 @@ const isLargeScreen = useMediaQuery({ query: '(min-width: 992px)' });
     }
     
   
-  
-
 
 // Update slidesToShow dynamically based on screen width
 settings.slidesToShow = getSlidesToShow();
@@ -140,9 +138,10 @@ settings.slidesToShow = getSlidesToShow();
       </div>
 
       <div className='mt-20'>
-      <Slider {...settings} className="my-slider slider-dots slider-dots-active">          {projects.map((project, index) => (
-            <div key={`project-${index}`}>
-              <ProjectCard index={index} {...project} />
+      <Slider {...settings} className="my-slider slider-dots slider-dots-active">         
+       {education.map((educarion, index) => (
+            <div key={`education-${index}`}>
+              <ProjectCard index={index} {...education} />
             </div>
           ))}
         </Slider>
