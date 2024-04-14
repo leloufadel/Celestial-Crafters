@@ -26,7 +26,9 @@ import {
     bankist,
     threejs,
     live,
+    bachelor,
     financial,
+
   } from "../assets";
   
   export const navLinks = [
@@ -315,5 +317,119 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+  //////////
+
+  const education = [
+    {
+      name: "Bachelor's Degree in Computer Science",
+      description:
+        "Page to Page Library is a Full Stuck web app that allows users to view and reserve books. Only admins can add and delete books and also give admin permissions to regular users.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Postgresql",
+          color: "green-text-gradient",
+        },
+        {
+          name: "ruby on rails",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: bachelor,
+      source_code_link: "https://github.com/leloufadel/Page-To-page-Library-Backend",
+      live_code_link: "https://page-to-page.onrender.com/",
+
+    },
+    {
+      name: "Space Travelers' Hub",
+      description:
+        "Space Travelers' Hub is a web application for a company that provides commercial and scientific space travel services. It allows users to book rockets and join selected space missions.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/sam2if/Space_Travelers",
+      live_code_link: "https://space-travelers-p674.onrender.com/",
+    },
+    ,
+    {
+      name: "Financial Metrics App",
+      description:
+        " An application that showcases the financial statements of selected companies in the US. The data is in real time, audited, standardized and up to date from the US stock market.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: financial,
+      source_code_link: "https://github.com/leloufadel/Financial-Metrics-App",
+      live_code_link: "https://financial-metrics-app.onrender.com/",
+    },
+    {
+      name: "Bankist Project",
+      description:
+        " A Virtual banking experience. Bankist is a fictional online bank. It is a project introduced by Jonas Schmedtmann in order to practice DOM manipulation and user interaction. Bankist has the option to log in to the account and use different functionalities, almost like in an actual bank.",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Html",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: bankist,
+      source_code_link: "https://github.com/leloufadel/Bankist-Project",
+      live_code_link: "https://github.com/leloufadel/Bankist-Project",
+    },
+    {
+      name: "Recipe Guide",
+      description:
+        "Recipe Search App is a web application that allows users to search for their favorite recipes and displays a list of recipes based on the search query. It integrates with the Edamam API to fetch recipe data and provides a user-friendly interface for finding and exploring various recipes.",
+      tags: [
+        {
+          name: "javaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "API",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/",
+    },
+  ];
+  export { services, technologies, experiences, testimonials, projects, education };
